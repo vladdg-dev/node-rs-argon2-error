@@ -23,7 +23,7 @@ const Register: React.FC = () => {
     const { username, password } = formData;
 
     console.log(username, password);
-    const hashedPassword = hashPassword(password);
+    const hashedPassword = await hashPassword(password);
 
     console.log(hashedPassword);
   };
